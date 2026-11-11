@@ -1,0 +1,10 @@
+{
+  "name": "mail-agent",
+  "version": "1.0.0",
+  "description": "AI-powered Gmail smart organization and automated bank statement processing plugin.",
+  "author": "khwang-assistant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khwang-assistant/mail-agent-plugin.git"
+  }
+}
