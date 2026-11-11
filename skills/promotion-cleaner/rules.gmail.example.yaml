@@ -1,0 +1,27 @@
+# Gmail 專屬促銷廣告信分類規則範本
+provider: "gmail"
+
+labels:
+  parent: "MailAgent/廣告信"
+  other: "MailAgent/廣告信/其他"
+
+custom_rules:
+  - id: "AMAZON"
+    label_name: "Amazon"
+    domain_guardrail: "amazon"
+    description: "Amazon 線上購物促銷、今日特惠與包裹行銷推薦信件"
+
+  - id: "LINKEDIN"
+    label_name: "LinkedIn"
+    domain_guardrail: "linkedin.com"
+    description: "LinkedIn 人脈動態、精選職缺推薦與職場每週精選電子報"
+
+  - id: "UBEREATS"
+    label_name: "UberEats"
+    domain_guardrail: "ubereats"
+    description: "UberEats 美食外送優惠券、限時免運折扣與生鮮推廣信件"
+
+safe_rules:
+  - "個人通訊、工作往來信件。"
+  - "銀行綜合對帳單、信用卡帳單、水電瓦斯繳費通知、電子發票開立通知。"
+  - "密碼重設、帳戶安全性快訊、雙重驗證碼 (2FA)。"

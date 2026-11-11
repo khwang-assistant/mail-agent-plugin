@@ -1,0 +1,23 @@
+# Hotmail / Outlook.com 專屬促銷廣告信分類規則範本
+provider: "hotmail"
+
+labels:
+  parent: "MailAgent - 廣告信"
+  other: "MailAgent - 廣告信 - 其他"
+
+# 可自訂特定品牌子資料夾，未符合者將自動歸入「其他」
+custom_rules:
+  - id: "AMAZON"
+    label_name: "Amazon"
+    domain_guardrail: "amazon"
+    description: "Amazon 線上購物促銷、今日特惠與包裹行銷推薦信件"
+
+  - id: "SUBSTACK"
+    label_name: "Substack"
+    domain_guardrail: "substack.com"
+    description: "Substack 訂閱型知識電子報、創作者最新文章推播"
+
+safe_rules:
+  - "微軟帳戶安全性警示、密碼重設、單次登入代碼、備援信箱驗證通知。"
+  - "Microsoft 官方電子發票、各銀行綜合對帳單、信用卡消費帳單。"
+  - "個人通訊、工作往來信件。"

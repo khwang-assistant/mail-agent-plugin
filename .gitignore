@@ -6,7 +6,11 @@ __pycache__/
 # Sensitive credentials & secrets
 .env
 credentials.json
+token*.json
 token.json
+token_gmail.json
+token_hotmail.json
+token_microsoft.json
 rules.yaml
 *.pdf
 *.xlsx
